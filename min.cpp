@@ -2,8 +2,8 @@
 
 bool c(const char *s,int c){while(*s&&c>=0)*s++==40?++c:--c;return !c;}
 
-bool testCase(const char str[], bool expected, bool& res) {
-    res = c(str, 0);
+bool testCase(const char s[], bool expected, bool& res) {
+    res = c(s, 0);
     return res == expected;
 }
 
