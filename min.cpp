@@ -3,7 +3,7 @@
 bool c(const char *s,int c){while(*s&&c>=0)*s++==40?++c:--c;return !c;}
 
 bool testCase(const char s[], bool expected, bool& res) {
-    res = c(s, 0);
+    res = c(s,0);
     return res == expected;
 }
 
